@@ -75,6 +75,15 @@ function AdicionarEst()
 {
   alert("Adicionando estudiante2");
 }
+const index=prompt("Ingrese a eliminar (1 a" + estudiantes.value.length)
+if(index !== null){
+  const idx = parseInt(index) -1;
+  if (idx >=0 && idx <estudiantes.value.length){
+    estudiantes.value.splice(idx, 1);
+  }else{
+    alert("Indice invalido. entre 1 y " + estudiantes.value.length)
+  }
+}
 </script>
 
 <style scoped>
